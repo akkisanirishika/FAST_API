@@ -114,25 +114,3 @@ pytest -q
 ruff check .
 ```
 
-## Deploy Publicly (Render)
-
-This app can be deployed to a public URL on Render.
-
-1. Push this repo to GitHub (already done):
-   - [https://github.com/akkisanirishika/FAST_API](https://github.com/akkisanirishika/FAST_API)
-2. Open Render dashboard:
-   - [https://dashboard.render.com](https://dashboard.render.com)
-3. Create a **New Web Service** from your GitHub repo.
-4. Use these settings:
-   - **Runtime:** Python 3
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-5. Click **Deploy**.
-
-After deploy, Render gives a public URL like:
-
-- `https://fast-api-xxxx.onrender.com`
-
-Open your live docs at:
-
-- `https://fast-api-xxxx.onrender.com/docs`

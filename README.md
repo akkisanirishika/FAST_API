@@ -1,4 +1,4 @@
-# Beginner FastAPI Project
+# FastAPI Project
 
 This is a minimal FastAPI starter project with:
 
@@ -9,6 +9,7 @@ This is a minimal FastAPI starter project with:
 - Todo CRUD API (`/todos`)
 - basic test setup with `pytest`
 - run instructions using `uvicorn`
+- Docker support
 
 ## Project Structure
 
@@ -22,6 +23,9 @@ FAST_API/
 │     └─ routes.py
 ├─ requirements.txt
 ├─ requirements-dev.txt
+├─ Dockerfile
+├─ docker-compose.yml
+├─ .dockerignore
 ├─ tests/
 │  └─ test_main.py
 └─ README.md
